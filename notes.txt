@@ -1,0 +1,25 @@
+
+// == Clicking
+const clickFunction = (e) => console.log(e.currentTarget)
+const sayHello = name => console.log(`Hello ${name}`)
+
+// Do not invoke, because it will call the method when page loads and we get the return value
+// But what if we want to pass param? We need to put it on annfuction
+
+<button onClick={clickFunction}>Click Me</button>
+<button onClick={(e) => sayHello('Theo')}>Say Hello</button>
+
+// Hooks
+// Use Effect
+The second param of use effect is dependencies list. It shows which dependencies will trigger the effect.
+// Use the variable
+Only works if the variable uses state
+
+// Use JSON Server
+# npx json-server --watch ./data.json --port 8100
+get /blogs
+get /blogs/:id
+post /blogs
+delete /blogs/:id
+
+
